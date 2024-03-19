@@ -55,7 +55,7 @@ section {
 }
 
 footer {
-    background: linear-gradient(to right, #800000, #8B0000)); /* Gradient granatowy */
+    background: linear-gradient(to right, #8B0000, #800000)); /* Gradient granatowy */
     color: #FFF;
     padding: 20px;
     text-align: center;
