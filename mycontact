@@ -17,6 +17,7 @@
         <a href="products.html">Products</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
+<a href="mycontact">My Contact</a>
     </nav>
     <section id="products">
         <h2>Our Products</h2>
