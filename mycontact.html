@@ -1,41 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TexMatiC - Products</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Strona z hasłem</title>
+  <style>
+    #sekretnaZawartosc {
+      display: none;
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>TexMatiC - Products</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product">
-            <h3>Smart Textile Sensors</h3>
-            <p>kamila.</p>
-        </div>
-        <div class="product">
-            <h3>Industrial IoT Controllers</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut odio vitae felis iaculis iaculis.</p>
-        </div>
-        <div class="product">
-            <h3>Smart Agriculture Solutions</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut odio vitae felis iaculis iaculis.</p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 TexMatiC. All rights reserved.</p>
-    </footer>
-</body>
 
+  <h2>Podaj hasło, aby wejść:</h2>
+  <input type="password" id="hasloInput">
+  <button onclick="sprawdzHaslo()">Wejdź</button>
+
+  <div id="sekretnaZawartosc">
+    ✔️ Witamy w tajnej strefie!
+  </div>
+
+  <script>
+    function sprawdzHaslo() {
+      const haslo = document.getElementById("hasloInput").value;
+      const poprawneHaslo = "0618";
+
+      if (haslo === poprawneHaslo) {
+        document.getElementById("sekretnaZawartosc").style.display = "block";
+      } else {
+        alert("❌ Nieprawidłowe hasło!");
+      }
+    }
+  </script>
+
+</body>
 </html>
